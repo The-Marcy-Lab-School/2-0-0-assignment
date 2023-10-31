@@ -56,6 +56,8 @@ OK! So start with our blank `index.html` file and add a `head` tag, with a `titl
 
 > Pro tip: if you're using VSCode, in a blank `.html` file, just start writing `html` and a little drop down pops up, select `html:5` and you'll get a really nice default boilerplate code snippet. Just edit that!
 
+As we build this website, you may want to view the result! Use the command `open src/index.html` to open up your `.html` file in your browser!
+
 # Question 2 - body with main
 Now, add the `body` tag (if you didn't with the VSCode shortcut above), and then inside this we're going to put a `main` tag. `main` is a special *semantic* element that tells our page where our main content is, as opposed to our header, navigation or footer. Think of it like a special `div`. It's great, please always use a `main` tag for your primary content! All our tags in this `index.html` will be in `main`.
 
@@ -66,7 +68,7 @@ Every page should have 1 primary `h1` tag, so let's do that! Create an `h1` as t
 Ok, so now for a subtitle. As the sibling of `h1` (right next to and under, not nested), create a `p` tag. Give this `p` tag an id of: `subtitle` and a text content of: `It's great to see you!`
 
 # Question 5 - Add an h2 and ordered list
-Let's rank our hobbies! Add an `h2` (`h2` because the other heading was an `h1`, and our sub sections shouldn't ever jump headings, so `h3` would be wrong). The `h2` should say `Hobbies`.
+Let's rank our hobbies! Add an `h2` (`h2` because the other heading was an `h1`, and our sub sections shouldn't ever jump headings, so `h3` would be wrong). The `h2` should say `Hobbies` and have an `id` attribute of `"hobbies"`.
 
 Now add an ordered list (is that `ol` or `ul`?) and in this ordered list add `li` elements with these text contents, in this order:
 
@@ -95,7 +97,7 @@ Let's make a little div with information on our http status codes. It doesn't ma
 Anyway, make a `div` in `main` that has an id of `status-code-info`.
 
 # Question 7 - an img
-Now, in that `div` we just made, add a child `img` tag. It's going to have an `href` of: `https://http.cat/images/200.jpg`, and an `alt` attribute of: `A weird looking cat that exudes good vibes.` The image is going to appear huge, that's ok! We'd normally fix that with CSS, but we aren't worried about that today. `alt` tags are required if your image is central content to the page. It describes the image to screen readers and search bots. SUPER IMPORTANT!
+Now, in that `div` we just made, add a child `img` tag. It's going to have a `src` attribute of: `https://http.cat/images/200.jpg`, and an `alt` attribute of: `A weird looking cat that exudes good vibes.` The image is going to appear huge, that's ok! We'd normally fix that with CSS, but we aren't worried about that today. `alt` tags are required if your image is central content to the page. It describes the image to screen readers and search bots. SUPER IMPORTANT!
 
 # Question 8 - add some spans
 Ok, now still in this `div`, under the `img` let's add two `p` tags. The text content for them are:
@@ -118,7 +120,7 @@ But here's the catch, and be careful! Put a `span` with a class of `fancy` aroun
 > NOTE: Could we have used a `figure` tag to do this *even* more accessibly? Don't change it here (the tests aren't looking for that), but research it on your own!
 
 # Question 9 - add an anchor tag
-Now let's add a link as the last element of `main`. It will link to our other page, `modify.html`. To do this add an `a` tag with an `href` of `./modify.html`. Also, I'd like my link to open in a new tab, and luckily that's super easy. Add a `target` attribute to the `a` tag with a value of `_blank`. This isn't always what we want, but it's a good trick to know!
+Now let's add a link as the last element of `main`. It will link to our other page, `modify.html`. To do this add an `a` tag with an `href` of `./modify.html`. Its text content should read `Go to our modify page!`. Also, I'd like my link to open in a new tab, and luckily that's super easy. Add a `target` attribute to the `a` tag with a value of `_blank`. This isn't always what we want, but it's a good trick to know!
 
 # Modify
 OK! With your `index.html` done, let's work on `modify.html`. This page is actually mostly fine, it's just not very accessible because of some small errors.
