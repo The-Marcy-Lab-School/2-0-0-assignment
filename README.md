@@ -9,10 +9,10 @@
 - [Question 4 - Add a p tag](#question-4---add-a-p-tag)
 - [Question 5 - Add an h2 and ordered list](#question-5---add-an-h2-and-ordered-list)
 - [Question 6 - add some classes](#question-6---add-some-classes)
-- [Question 6 - div for status code info](#question-6---div-for-status-code-info)
-- [Question 7 - an img](#question-7---an-img)
-- [Question 8 - add some spans](#question-8---add-some-spans)
-- [Question 9 - add an anchor tag](#question-9---add-an-anchor-tag)
+- [Question 7 - div for status code info](#question-7---div-for-status-code-info)
+- [Question 8 - an img](#question-8---an-img)
+- [Question 9 - add some spans](#question-9---add-some-spans)
+- [Question 10 - add an anchor tag](#question-10---add-an-anchor-tag)
 - [Modify](#modify)
   - [Semantic Elements](#semantic-elements)
   - [Too many h1s](#too-many-h1s)
@@ -91,15 +91,15 @@ Ids should be unique, but you can repeat class names, so lets try that. On only 
 <p class="primary secondary-text">Good!</p>
 ```
 
-# Question 6 - div for status code info
+# Question 7 - div for status code info
 Let's make a little div with information on our http status codes. It doesn't matter if you don't know what a status code is yet, just follow the prompts, just a fun little look ahead!
 
 Anyway, make a `div` in `main` that has an id of `status-code-info`.
 
-# Question 7 - an img
+# Question 8 - an img
 Now, in that `div` we just made, add a child `img` tag. It's going to have a `src` attribute of: `https://http.cat/images/200.jpg`, and an `alt` attribute of: `A weird looking cat that exudes good vibes.` The image is going to appear huge, that's ok! We'd normally fix that with CSS, but we aren't worried about that today. `alt` tags are required if your image is central content to the page. It describes the image to screen readers and search bots. SUPER IMPORTANT!
 
-# Question 8 - add some spans
+# Question 9 - add some spans
 Ok, now still in this `div`, under the `img` let's add two `p` tags. The text content for them are:
 
 ```plaintext
@@ -119,7 +119,7 @@ But here's the catch, and be careful! Put a `span` with a class of `fancy` aroun
 
 > NOTE: Could we have used a `figure` tag to do this *even* more accessibly? Don't change it here (the tests aren't looking for that), but research it on your own!
 
-# Question 9 - add an anchor tag
+# Question 10 - add an anchor tag
 Now let's add a link as the last element of `main`. It will link to our other page, `modify.html`. To do this add an `a` tag with an `href` of `./modify.html`. Its text content should read `Go to our modify page!`. Also, I'd like my link to open in a new tab, and luckily that's super easy. Add a `target` attribute to the `a` tag with a value of `_blank`. This isn't always what we want, but it's a good trick to know!
 
 # Modify
