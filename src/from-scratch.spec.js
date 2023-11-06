@@ -74,7 +74,7 @@ describe(testSuiteName, () => {
     scoreCounter.correct(expect); // DO NOT TOUCH
   });
 
-  it('has an unordered list of hobbies in main', () => {
+  it('has an ordered list of hobbies in main', () => {
     const ol = document.querySelector('main ol#hobbies');
     expect(ol).toBeTruthy();
 

@@ -68,7 +68,7 @@ Every page should have 1 primary `h1` tag, so let's do that! Create an `h1` as t
 Ok, so now for a subtitle. As the sibling of `h1` (right next to and under, not nested), create a `p` tag. Give this `p` tag an id of: `subtitle` and a text content of: `It's great to see you!`
 
 # Question 5 - Add an h2 and ordered list
-Let's rank our hobbies! Add an `h2` (`h2` because the other heading was an `h1`, and our sub sections shouldn't ever jump headings, so `h3` would be wrong). The `h2` should say `Hobbies` and have an `id` attribute of `"hobbies"`.
+Let's rank our hobbies! Add an `h2` (`h2` because the other heading was an `h1`, and our sub sections shouldn't ever jump headings, so `h3` would be wrong). The `h2` should say `Hobbies`.
 
 Now add an ordered list (is that `ol` or `ul`?) and in this ordered list add `li` elements with these text contents, in this order:
 
@@ -77,7 +77,7 @@ Now add an ordered list (is that `ol` or `ul`?) and in this ordered list add `li
 3. Cooking
 4. Running
 
-Do you need to add the numbers...or is that given to us for free by the ordered list tag?
+Do you need to add the numbers...or is that given to us for free by the ordered list tag? The list tag needs to have an `id` attribute of `"hobbies"`.
 
 # Question 6 - add some classes
 Ids should be unique, but you can repeat class names, so lets try that. On only the `Chess` and `Coding` `li`s, add a class attribute of `nerd`.
